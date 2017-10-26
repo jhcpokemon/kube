@@ -1,1 +1,1 @@
-FROM gcr.io/google_containers/kube-controller-manager-amd64:v1.7.9
+FROM gcr.io/google_containers/etcd-amd64:3.0.17
