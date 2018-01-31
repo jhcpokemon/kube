@@ -4,7 +4,6 @@ ENV NODE_VERSION 8.9.4
 
 RUN addgroup -g 1000 node \
     && adduser -u 1000 -G node -s /bin/sh -D node \
-    && sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
     && apk add --no-cache \
         libstdc++ \
     && apk add --no-cache --virtual .build-deps \
