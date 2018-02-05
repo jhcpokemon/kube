@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jhcpokemon/node-py
+    steps:
+      - checkout
+      - run: node -v
